@@ -1,24 +1,20 @@
+/* Universal CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Body CSS Styls */
 body{
     font-family: 'Work Sans', sans-serif;
     background-color: #FFF;
 }
+/* Header CSS Styls */
 header{
     background: rgba(255, 144, 14, 0.10);
     padding-top: 20px;
 }
-.container{
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.row{
+.header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -94,6 +90,18 @@ nav ul li a{
     width: auto;
     margin: 0 auto;
 }
+.container{
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .primary-button{
     color: #FFF;
     text-align: center;
@@ -111,12 +119,40 @@ nav ul li a{
 .banner-image{
     width: 100%;
 }
-
+/* Our Features CSS Styls */
+.our-features-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+}
+.our-features-images img{
+    width: 300px
+}
+.our-features{
+    margin-inline-start: 20px;
+}
+.our-features-title{
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+.dark-bold-text{
+    color: #131313;
+    font-weight: 700;
+}
+.text-organge{
+    color: #FF900E;
+    font-weight: 700;
+}
 /* Extra Small */
 @media screen and (max-width: 575.98px) {
     .container {
       width: 100%;
       max-width: 100%;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: flex-start;
     }
     .logo a{
         font-size: 32px;
@@ -155,6 +191,12 @@ nav ul li a{
         display: block;
         margin: 0;
     }
+    .our-features-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features-title{
+        font-size: 38px;
+    }
   }
   
   /* Small */
@@ -163,6 +205,10 @@ nav ul li a{
       width: 100%;
       max-width: 540px;
     }
+    .row {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
   }
   
   /* Medium */
@@ -170,6 +216,10 @@ nav ul li a{
     .container {
       width: 100%;
       max-width: 720px;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: flex-start;
     }
   }
 
