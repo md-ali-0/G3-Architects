@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #FFF;
+}
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding-top: 20px;
+}
+.container{
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    color: #131313;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: #424242;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 25px;
+}
+.nav-toggle{
+    height: 32px;
+    width: 44px;
+    background-color: #fff4e6;
+    border: 1px solid #efb974;
+    border-radius: 3px;
+    display: none;
+}
+.nav-toggle:focus{
+    box-shadow: 0 0 5px rgb(255 144 14);
+}
+.nav-toggle span{
+    height: 2px;
+    width: 20px;
+    background-color: #FF900E;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+.nav-toggle span::after,
+.nav-toggle span::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #FF900E;
+    top: 0;
+    left: 0;
+    content: '';
+}
+.nav-toggle span::after{
+    transform: translateY(-6px);
+}
+.nav-toggle span::before{
+    transform: translateY(6px);
+}
+.brand{
+    text-align: center;
+    margin-top: 100px;
+}
+.brand-title{
+    color: #131313;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+.brand-description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    width: auto;
+    margin: 0 auto;
+}
+.primary-button{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.banner-image{
+    width: 100%;
+}
+
+/* Extra Small */
+@media screen and (max-width: 575.98px) {
+    .container {
+      width: 100%;
+      max-width: 100%;
+    }
+    .logo a{
+        font-size: 32px;
+    }
+    .brand{
+        margin-top: 50px;
+    }
+    .brand-title{
+        font-size: 40px;
+    }
+    .brand-description{
+        width: auto;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    header nav{
+        width: 100%;
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.5s ease;
+    }
+    header nav.open{
+        visibility: visible;
+    }
+    header nav ul {
+        padding: 12px 15px;
+        margin-top: 12px;
+        border-top: 1px solid rgba(255,255,255,0.6);
+        background: antiquewhite;
+        border-radius: 5px;
+    }
+    header nav ul li{
+        display: block;
+        margin: 0;
+    }
+  }
+  
+  /* Small */
+  @media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+      width: 100%;
+      max-width: 540px;
+    }
+  }
+  
+  /* Medium */
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+      width: 100%;
+      max-width: 720px;
+    }
+  }
+
+  /* Tablet */
+  @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .container {
+      width: 100%;
+      max-width: 960px;
+    }
+  }
+  /* Large */
+  @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+      width: 100%;
+      max-width: 960px;
+    }
+  }
+  
+  /* X-Large */
+  @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+    .container {
+      width: 100%;
+      max-width: 1140px;
+    }
+  }
+  
+  /* XX-Large */
+  @media screen and (min-width: 1400px) {
+    .container {
+      width: 100%;
+      max-width: 1320px;
+    }
+  }
+  
