@@ -116,6 +116,9 @@ nav ul li a{
 .mt-20{
     margin-top: 20px;
 }
+.mt-10{
+    margin-top: 10px;
+}
 .banner-image{
     width: 100%;
 }
@@ -143,6 +146,67 @@ nav ul li a{
 .text-organge{
     color: #FF900E;
     font-weight: 700;
+}
+/* Features List Styls */
+
+.features-list{
+    width: 700px;
+}
+.features-list h3{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+.features-list > p{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
+.features-list > h4{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+.features-item{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 15px;
+    margin: 10px 0;
+}
+.features-item > p{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
+.features-list-image img{
+    width: 100%;
+    margin-left: 30px;
+}
+.experience{
+    border-radius: 8px;
+    background: #FF900E;
+    width: 200px;
+    margin-top: -40px;
+    margin-left: 15px;
+    z-index: 1;
+    position: absolute;
+}
+.experience h3{
+    color: #FFF;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    padding: 10px 0 0 0;
+}
+.experience p{
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 0 10px 0px;
 }
 /* Extra Small */
 @media screen and (max-width: 575.98px) {
@@ -197,6 +261,15 @@ nav ul li a{
     .our-features-title{
         font-size: 38px;
     }
+    .features-list {
+        width: auto;
+    }
+    .features-list-image img {
+        margin-left: auto;
+    }
+    .experience {
+        margin-left: 10px;
+    }
   }
   
   /* Small */
@@ -209,6 +282,12 @@ nav ul li a{
         flex-direction: column;
         justify-content: flex-start;
     }
+    .features-list {
+        width: auto;
+    }
+    .features-list-image img {
+        margin-left: auto;
+    }
   }
   
   /* Medium */
@@ -220,6 +299,9 @@ nav ul li a{
     .row {
         flex-direction: column;
         justify-content: flex-start;
+    }
+    .features-list-image img {
+        margin-left: auto;
     }
   }
 
